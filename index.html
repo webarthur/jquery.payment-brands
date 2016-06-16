@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Payment Brands</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="js/jquery.payment.min.js"></script>
+    <script src="js/query.payment-brands.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>
+        jquery.payment-brands demo
+        <small><a class="btn btn-info btn-xs" href="https://github.com/webarthur/jquery.payment-brands">Fork on GitHub</a></small>
+      </h1>
+      <p>Exemplo de como puxar automaticamente as bandeiras dos cartões no campo digitado.</p>
+      <form novalidate autocomplete="on" method="POST">
+        <div class="form-group">
+          <label for="cc-number" class="control-label">Número do cartão: </label>
+          <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required>
+        </div>
+
+        <h3>Cartões pra testar</h3>
+        <table class="table">
+          <thead><tr>
+            <th colspan="2">Cartão com autenticação</th>
+          </tr></thead>
+          <tbody><tr>
+            <td>4012001037141112</td>
+            <td>Visa</td>
+          </tr></tbody>
+          <thead><tr>
+            <th colspan="2">Cartão sem autenticação</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td>4551870000000183</td>
+              <td>Visa</td>
+            </tr>
+            <tr>
+              <td>5453010000066167</td>
+              <td>Mastercard</td>
+            </tr>
+            <tr>
+              <td>6362970000457013</td>
+              <td>Elo</td>
+            </tr>
+            <tr>
+              <td>36490102462661</td>
+              <td>Diners</td>
+            </tr>
+            <tr>
+              <td>6011020000245045</td>
+              <td>Discover</td>
+            </tr>
+            <tr>
+              <td>376449047333005</td>
+              <td>American Express</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- <div class="form-group">
+          <label for="cc-exp" class="control-label">Card expiry formatting</label>
+          <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cc-cvc" class="control-label">Card CVC formatting</label>
+          <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" required>
+        </div>
+
+        <div class="form-group">
+          <label for="numeric" class="control-label">Restrict numeric</label>
+          <input id="numeric" type="tel" class="input-lg form-control" data-numeric>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+
+        <h2 class="validation"></h2> -->
+      </form>
+    </div>
+
+  </body>
+</html>

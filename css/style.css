@@ -1,0 +1,37 @@
+
+input.visa,
+input.amex,
+input.mastercard,
+input.discover,
+input.jcb,
+input.diners,
+input.dinersclub,
+input.elo,
+input.mastercard,
+input.invalid {
+	background-position: 98% 50% !important;
+	background-repeat: no-repeat;
+	background-size: 41px;
+}
+
+input.invalid {
+	background-size: 14px !important;
+	-webkit-box-shadow: 0 0 4px #e9322d;
+	-moz-box-shadow: 0 0 4px #e9322d;
+	box-shadow: 0 0 4px #e9322d
+}
+
+input.invalid:focus {
+	border-color:#c99 !important;
+}
+
+input.visa {background-image: url(../images/cc-visa.png)}
+input.amex {background-image: url(../images/cc-amex.png)}
+input.mastercard {background-image: url(../images/cc-mastercard.png)}
+input.elo {background-image: url(../images/cc-elo.png)}
+input.hipercard {background-image: url(../images/cc-hipercard.png)}
+input.discover {background-image: url(../images/cc-discover.png)}
+input.jcb {background-image: url(../images/cc-cjb.png)}
+input.diners {background-image: url(../images/cc-diners.png)}
+input.dinersclub {background-image: url(../images/cc-dinersclub.png)}
+input.invalid {background-image: url(../images/invalid.png);background-size:14px}
